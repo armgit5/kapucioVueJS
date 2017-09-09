@@ -15,8 +15,8 @@
             </button>
             <a class="navbar-brand navbar-brand-logo" style="margin:0px" href="/">
               <!--<div class="logo">
-                                            <img src="https://firebasestorage.googleapis.com/v0/b/oasit-b6bc8.appspot.com/o/bee1_85V_icon.ico?alt=media&token=b806fa13-ff6e-4277-9a05-9902a6fb67f6">
-                                            </div>-->
+                                                <img src="https://firebasestorage.googleapis.com/v0/b/oasit-b6bc8.appspot.com/o/bee1_85V_icon.ico?alt=media&token=b806fa13-ff6e-4277-9a05-9902a6fb67f6">
+                                                </div>-->
               <div class="brand">
                 <span style="font-size:30px;cursor:pointer;color:white;margin-left:25px;" @click="openNav()">&#9776;</span>
               </div>
@@ -33,11 +33,11 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <!--<li>
-                                                <a href="javascript:void(0);" data-toggle="search" class="hidden-xs">
-                                                    <i class="pe-7s-search"></i>
-                                                    <p>Search</p>
-                                                </a>
-                                            </li>-->
+                                                    <a href="javascript:void(0);" data-toggle="search" class="hidden-xs">
+                                                        <i class="pe-7s-search"></i>
+                                                        <p>Search</p>
+                                                    </a>
+                                                </li>-->
 
               <li>
                 <a href="#">
@@ -75,17 +75,17 @@
               </li>
             </ul>
             <!--<form class="navbar-form navbar-right navbar-search-form" role="search">
-                                         <div class="form-group">
-                                              <input type="text" value="" class="form-control" placeholder="Search...">
-                                         </div>
-                                      </form>-->
+                                             <div class="form-group">
+                                                  <input type="text" value="" class="form-control" placeholder="Search...">
+                                             </div>
+                                          </form>-->
 
           </div>
         </div>
       </nav>
       <!--<div class="blurred-container">
-                                    <div class="img-src" style="background-image: url('images/bg.jpg')"></div>
-                                </div>-->
+                                        <div class="img-src" style="background-image: url('images/bg.jpg')"></div>
+                                    </div>-->
     </div>
 
   </div>
@@ -134,7 +134,7 @@
 
 <script>
 export default {
-  data () {
+  data() {
     return {
       coffeeCounts: 0,
       customerName: '',
@@ -143,7 +143,7 @@ export default {
     }
   },
   methods: {
-    openNav () {
+    openNav() {
       if (!this.clicked) {
         document.getElementById('mySidenav').style.width = '17%'
         document.getElementById('mySidenav').style.paddingLeft = '4%'
@@ -156,7 +156,7 @@ export default {
         this.clicked = false
       }
     },
-    menuOut () {
+    menuOut() {
       document.getElementById('mySidenav').style.width = '0'
       document.getElementById('mySidenav').style.paddingLeft = '0%'
       document.getElementById('mySidenav').style.paddingRight = '0%'
