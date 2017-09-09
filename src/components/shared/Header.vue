@@ -14,9 +14,6 @@
               <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand navbar-brand-logo" style="margin:0px" href="/">
-              <!--<div class="logo">
-                                            <img src="https://firebasestorage.googleapis.com/v0/b/oasit-b6bc8.appspot.com/o/bee1_85V_icon.ico?alt=media&token=b806fa13-ff6e-4277-9a05-9902a6fb67f6">
-                                            </div>-->
               <div class="brand">
                 <span style="font-size:30px;cursor:pointer;color:white;margin-left:25px;" @click="openNav()">&#9776;</span>
               </div>
@@ -32,17 +29,9 @@
 
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <!--<li>
-                                                <a href="javascript:void(0);" data-toggle="search" class="hidden-xs">
-                                                    <i class="pe-7s-search"></i>
-                                                    <p>Search</p>
-                                                </a>
-                                            </li>-->
-
               <li>
-                <a href="#">
+                <a href="#" style="height:45px">
                   <i class="pe-7s-note2"></i>
-                  <!--<p>Queue</p>-->
                 </a>
               </li>
               <li>
@@ -50,13 +39,11 @@
                   <i class="pe-7s-cart">
                     <span class="label" style="font-size: 11px;">{{coffeeCounts}}</span>
                   </i>
-                  <!--<p>Cart</p>-->
                 </a>
               </li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   <i class="pe-7s-user"></i>
-                  <!--<p>Account <b class="caret"></b></p>-->
                 </a>
                 <ul class="dropdown-menu">
                   <li>
@@ -74,18 +61,9 @@
                 </ul>
               </li>
             </ul>
-            <!--<form class="navbar-form navbar-right navbar-search-form" role="search">
-                                         <div class="form-group">
-                                              <input type="text" value="" class="form-control" placeholder="Search...">
-                                         </div>
-                                      </form>-->
-
           </div>
         </div>
       </nav>
-      <!--<div class="blurred-container">
-                                    <div class="img-src" style="background-image: url('images/bg.jpg')"></div>
-                                </div>-->
     </div>
 
   </div>
@@ -116,6 +94,10 @@
 
 .sidenav a:hover {
   color: #f1f1f1;
+}
+
+.navbar-nav > li > a {
+  height: 45px;
 }
 
 .sidenav .closebtn {

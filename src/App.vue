@@ -1,27 +1,31 @@
 <template>
-  <div id="app">
+  <div class="container">
     <kapucio-header></kapucio-header>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
-  import Header from './components/shared/Header.vue'
+import Header from './components/shared/Header.vue'
 
-  export default {
-    components: {
-      'kapucio-header': Header
-    }
+export default {
+  components: {
+    'kapucio-header': Header
   }
+}
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
+.container.main {
+    padding-top: 85px;
 }
+
+html, body, .container.main {
+    font-family: "Helvetica Neue", "Helvetica", "Hiragino Kaku Gothic Pro", arial, sans-serif;
+    color: #211922;
+    font-size: 14px;
+    font-weight: 300;
+}
+
 </style>
