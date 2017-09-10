@@ -1,5 +1,5 @@
 <template>
-  <div class="col-xs-11 col-sm-6 col-md-4">
+  <div class="col-xs-12 col-sm-6 col-md-4">
     <div class="card">
       <div class="image">
         <img src="http://md-pro-angular.creative-tim.com/assets/img/card-2.jpeg" alt="">
