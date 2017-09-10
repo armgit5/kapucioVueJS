@@ -1,126 +1,12 @@
 <template>
-<div>
-</div>
+  <card>
+  </card>
 </template>
 
 <script>
 export default {
-
 }
 </script>
 
 <style>
-
-.product-tile .img-middle {
-    cursor: pointer;
-    height: 0;
-    overflow: hidden;
-    padding-bottom: 100%;
-    position: absolute;
-    z-index: 0;
-}
-
-.img-middle .img-responsive {
-    margin: 0 auto;
-}
-
-.custom {
-    border: 1px solid #444;
-    border-radius: 6px;
-    padding: 2px;
-    transition: all 0.2s ease-in-out;
-}
-
-.product-info .product-title {
-    margin-bottom: 5px;
-    margin-top: 10px;
-}
-
-.product-info .product-comment {
-    margin-bottom: 5px;
-}
-
-.product-info {
-    color: #444;
-    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-    font-size: 14px;
-    line-height: 1.7;
-    min-height: 130px;
-    max-height: 160px;
-    width: 100%;
-}
-
-.product-info a {
-    color: #444;
-    display: block;
-    text-decoration: none!important;
-    padding: 5px;
-    padding-top: 10px;
-    padding-bottom: 15px;
-}
-
-
-.product-price {
-    color: #000;
-    font-size: 15px;
-    font-weight: 700;
-    max-height: 50px;
-    min-height: 25px;
-
-}
-
-.product-price-wrapper {
-    width: 100%;
-}
-
-#product-boarder {
-    border: thin solid #999;
-    border-radius: 6px;
-    margin-bottom: 15px;
-    margin-top: 10px;
-    padding-bottom: 5px;
-    padding-left: 2px;
-    padding-right: 2px;
-}
-
-.product-info .x-container {
-    /*cursor: pointer;*/
-    /*padding-top: 10px;
-    padding-right: 20px;*/
-    position: absolute;
-    right: 20px;
-    top: 10px;
-    /*z-index: 2;*/
-    color: red;
-}
-
-.product-info .pencil-container {
-    cursor: pointer;
-    /*padding-top: 25px;
-    padding-right: 20px;*/
-    position: absolute;
-    right: 20px;
-    top: 25px;
-    z-index: 2;
-    color: orange;
-}
-
-:host >>> .alert-md-local {
-    padding: 15px;
-    margin-bottom: 20px;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    color: green;
-    text-align: right;
-    padding: 0;
-}
-
-.nav li a {
-    height:25px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
 </style>

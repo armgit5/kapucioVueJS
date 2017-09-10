@@ -2,7 +2,7 @@
   <div class="container">
     <p>Welcome: {{email}} to {{companyName}}</p>
     <div class="row">
-      <card v-for="i in 10" :key="i"></card>
+      <product v-for="i in 10" :key="i"></product>
     </div>
     <!--/row-->
     <hr>
