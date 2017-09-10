@@ -116,7 +116,7 @@
 
 <script>
 export default {
-  data () {
+  data() {
     return {
       coffeeCounts: 0,
       customerName: '',
@@ -125,7 +125,7 @@ export default {
     }
   },
   methods: {
-    openNav () {
+    openNav() {
       if (!this.clicked) {
         document.getElementById('mySidenav').style.width = '17%'
         document.getElementById('mySidenav').style.paddingLeft = '4%'
@@ -138,7 +138,7 @@ export default {
         this.clicked = false
       }
     },
-    menuOut () {
+    menuOut() {
       document.getElementById('mySidenav').style.width = '0'
       document.getElementById('mySidenav').style.paddingLeft = '0%'
       document.getElementById('mySidenav').style.paddingRight = '0%'

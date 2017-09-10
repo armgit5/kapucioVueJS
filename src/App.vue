@@ -1,6 +1,6 @@
 <template>
-  <div class="container">
-    <kapucio-header></kapucio-header>
+  <div id="app">
+    <app-header></app-header>
     <router-view></router-view>
   </div>
 </template>
@@ -10,15 +10,23 @@ import Header from './components/shared/Header.vue'
 
 export default {
   components: {
-    'kapucio-header': Header
+    'app-header': Header
   }
 }
 </script>
 
 <style>
 
-.container.main {
-    padding-top: 85px;
+body {
+  background-color: #eaebec;
+}
+
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  margin-top: 60px;
 }
 
 html, body, .container.main {
