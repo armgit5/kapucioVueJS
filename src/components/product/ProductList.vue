@@ -2,25 +2,27 @@
   <div class="container">
     <p>Welcome: {{email}} to {{companyName}}</p>
     <div class="row">
-      <product v-for="i in 10" :key="i"></product>
+      <div v-for="product in products">
+        <product :product="product"></product>
+      </div>
     </div>
-    <!--/row-->
     <hr>
     <footer>
       <div>© Kapucio Company 2017</div>
     </footer>
   </div>
-  <!--/.container-->
 </template>
 
 <script>
 import ProductItem from './ProductItem.vue'
+import { products } from './products.js'
 
 export default {
   data() {
     return {
       email: 'fmdas@codfas.com',
-      companyName: 'testcom'
+      companyName: 'testcom',
+      products: products
     }
   },
   methods: {
