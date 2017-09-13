@@ -1,20 +1,5 @@
 <template>
-  <div class="col-xs-12 col-sm-6 col-md-4">
-    <div class="card">
-      <div class="image">
-        <img :src="product.url" alt="">
-      </div>
-      <div class="content">
-        <span class="title">{{product.name}}</span>
-        <span class="price">{{product.price}}</span>
-        <div class="description">{{product.type}}</div>
-        <span class="attrs pull-right">
-          <strong>Size</strong>
-          <span>S, M, L</span>
-        </span>
-      </div>
-    </div>
-  </div>
+  <card :product="product"></card>
 </template>
 
 <script>

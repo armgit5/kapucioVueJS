@@ -7,6 +7,14 @@ import Card from '@/components/shared/Card'
 
 Vue.config.productionTip = false
 
+export const eventBus = new Vue({
+  // methods: {
+  //   getAllProducts(products) {
+  //     this.$emit('getAllProducts', products)
+  //   }
+  // }
+})
+
 Vue.component('card', Card)
 
 /* eslint-disable no-new */

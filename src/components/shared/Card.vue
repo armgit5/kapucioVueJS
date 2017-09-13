@@ -2,12 +2,12 @@
   <div class="col-xs-12 col-sm-6 col-md-4">
     <div class="card">
       <div class="image">
-        <img src="https://firebasestorage.googleapis.com/v0/b/oasit-b6bc8.appspot.com/o/armcomm%2Fimages%2F-KpTurFXIHJls92ZEhbR1?alt=media&token=3cc7a348-e393-445a-a170-d279d140d338" alt="">
+        <img :src="product.url" alt="">
       </div>
       <div class="content">
-        <span class="title">Americano</span>
-        <span class="price">$39</span>
-        <div class="description">Americano coffee</div>
+        <span class="title">{{product.name}}</span>
+        <span class="price">{{product.price}}</span>
+        <div class="description">{{product.type}}</div>
         <span class="attrs pull-right">
           <strong>Size</strong>
           <span>S, M, L</span>
@@ -18,7 +18,9 @@
 </template>
 
 <script>
+
 export default {
+  props: ['product']
 }
 </script>
 
