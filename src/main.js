@@ -7,9 +7,13 @@ import VueRouter from 'vue-router'
 import { routes } from './routers'
 import Card from '@/components/shared/Card'
 import { store } from './store/store'
-
+import VueResource from 'vue-resource'
 
 Vue.config.productionTip = false
+
+// Vue resource setup
+Vue.use(VueResource)
+Vue.http.options.root = 'https://oasit-b6bc8.firebaseio.com/'
 
 // Router Setup
 Vue.use(VueRouter)

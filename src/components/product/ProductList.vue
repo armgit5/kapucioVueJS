@@ -26,12 +26,24 @@ export default {
     }
   },
   methods: {
-    newCoffee() {
-
+    fetchData() {
+      this.$http.get('coffees.json')
+        .then(
+        response => {
+          return response.json()
+        }
+        )
+        .then(data => {
+          this.products = data
+          console.log(this.products)
+        })
     }
   },
   components: {
     'product': ProductItem
+  },
+  created() {
+    this.fetchData()
   }
 }
 </script>
