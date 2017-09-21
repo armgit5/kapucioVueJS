@@ -13,14 +13,20 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand navbar-brand-logo" style="margin:0px" href="/">
-              <div class="brand">
-                <span style="font-size:30px;cursor:pointer;color:white;margin-left:25px;" @click="openNav()">&#9776;</span>
-              </div>
-              <div class="brand"> KAPUCIO
-                <p style="font-size: 12px">OASIT</p>
-              </div>
-            </a>
+            <router-link
+                to="/"
+                tag="li"
+                active-class="active"
+                exact>
+              <a class="navbar-brand navbar-brand-logo" style="margin:0px" href="/">
+                <div class="brand">
+                  <span style="font-size:30px;cursor:pointer;color:white;margin-left:25px;" @click="openNav()">&#9776;</span>
+                </div>
+                <div class="brand"> KAPUCIO
+                  <p style="font-size: 12px">OASIT</p>
+                </div>
+              </a>
+            </router-link>
           </div>
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -29,18 +35,26 @@
 
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li>
-                <a href="#" style="height:45px">
+              <router-link
+                to="/queue"
+                tag="li"
+                active-class="active"
+                exact>
+                <a style="height:45px">
                   <i class="pe-7s-note2"></i>
                 </a>
-              </li>
-              <li>
-                <a href="#/cart">
+              </router-link>
+              <router-link
+                to="/cart"
+                tag="li"
+                active-class="active"
+                exact>
+                  <a>
                   <i class="pe-7s-cart">
                     <span class="label" style="font-size: 11px;">{{coffeeCounts}}</span>
                   </i>
                 </a>
-              </li>
+              </router-link>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   <i class="pe-7s-user"></i>
