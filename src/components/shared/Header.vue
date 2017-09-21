@@ -51,7 +51,7 @@
                 exact>
                   <a>
                   <i class="pe-7s-cart">
-                    <span class="label" style="font-size: 11px;">{{coffeeCounts}}</span>
+                    <span class="label" style="font-size: 11px;">{{productCounts}}</span>
                   </i>
                 </a>
               </router-link>
@@ -82,6 +82,47 @@
 
   </div>
 </template>
+
+<script>
+import { mapGetters } from 'vuex'
+export default {
+  data() {
+    return {
+      coffeeCounts: 0,
+      customerName: '',
+      clicked: false,
+      loginStatus: false
+    }
+  },
+  methods: {
+    openNav() {
+      if (!this.clicked) {
+        document.getElementById('mySidenav').style.width = '17%'
+        document.getElementById('mySidenav').style.paddingLeft = '4%'
+        document.getElementById('mySidenav').style.paddingRight = '4%'
+        this.clicked = true
+      } else {
+        document.getElementById('mySidenav').style.width = '0'
+        document.getElementById('mySidenav').style.paddingLeft = '0%'
+        document.getElementById('mySidenav').style.paddingRight = '0%'
+        this.clicked = false
+      }
+    },
+    menuOut() {
+      document.getElementById('mySidenav').style.width = '0'
+      document.getElementById('mySidenav').style.paddingLeft = '0%'
+      document.getElementById('mySidenav').style.paddingRight = '0%'
+      this.clicked = false
+    }
+  },
+  computed: {
+    ...mapGetters([
+      'productCounts'
+    ])
+  }
+}
+</script>
+
 
 <style>
 .sidenav {
@@ -128,36 +169,3 @@
 }
 </style>
 
-<script>
-export default {
-  data() {
-    return {
-      coffeeCounts: 0,
-      customerName: '',
-      clicked: false,
-      loginStatus: false
-    }
-  },
-  methods: {
-    openNav() {
-      if (!this.clicked) {
-        document.getElementById('mySidenav').style.width = '17%'
-        document.getElementById('mySidenav').style.paddingLeft = '4%'
-        document.getElementById('mySidenav').style.paddingRight = '4%'
-        this.clicked = true
-      } else {
-        document.getElementById('mySidenav').style.width = '0'
-        document.getElementById('mySidenav').style.paddingLeft = '0%'
-        document.getElementById('mySidenav').style.paddingRight = '0%'
-        this.clicked = false
-      }
-    },
-    menuOut() {
-      document.getElementById('mySidenav').style.width = '0'
-      document.getElementById('mySidenav').style.paddingLeft = '0%'
-      document.getElementById('mySidenav').style.paddingRight = '0%'
-      this.clicked = false
-    }
-  }
-}
-</script>

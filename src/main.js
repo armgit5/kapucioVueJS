@@ -6,6 +6,7 @@ import App from './App'
 import VueRouter from 'vue-router'
 import { routes } from './routers'
 import Card from '@/components/shared/Card'
+import { store } from './store/store'
 
 
 Vue.config.productionTip = false
@@ -25,6 +26,7 @@ Vue.component('card', Card)
 new Vue({
   el: '#app',
   router,
+  store,
   template: '<App/>',
   components: { App }
 })

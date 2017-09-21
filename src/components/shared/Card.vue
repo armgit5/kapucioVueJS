@@ -12,15 +12,29 @@
           <strong>Size</strong>
           <span>S, M, L</span>
         </span>
+        <div>
+          <button class="btn btn-primary" @click="addToCart">Add</button>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import { mapMutations, mapGetters } from 'vuex'
 
 export default {
-  props: ['product']
+  props: ['product'],
+  methods: {
+    ...mapMutations([
+      'addToCart'
+    ])
+  },
+  computed: {
+    ...mapGetters([
+      'productCounts'
+    ])
+  }
 }
 </script>
 
